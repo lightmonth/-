@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+        $('.nav').hover(function(){
+          $(this).find('.list').stop().slideDown(500).parent().css({background:'#0755a7'});
+        },function(){
+          $(this).find('.list').stop().slideUp(500).parent().css({background:'#0755a7'});
+        });
+      });
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .dingtu img{
+            width: 100%;
+        }
+        #nav-wrap {
+            height: 40px;
+            background: #0755a7;
+            font-family: 'Microsoft YaHei';
+        }
+        #nav-wrap #nav ul .nav a{
+            text-decoration: none;
+        }
+         #nav-wrap #nav {
+            height: 40px;
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+         #nav-wrap #nav ul {
+            list-style: none;
+            position: absolute;
+        }
+        #nav-wrap #nav ul li.nav {
+            position: relative;
+            z-index: 999;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+       
+        }
+        #nav-wrap #nav ul li.nav a  {
+            color: white;
+            padding: 0px 20px ;
+        }
+        #nav-wrap #nav ul li.nav a:hover{
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list {
+            display: none;
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list li {
+            border-top: 1px solid #fff;
+            font-size: 14px;
+        }
+        .zong{
+            width: 1000px;
+            margin: auto;
+        }
+        .jdxw{
+            /* border: 1px solid black; */
+            width: 1000px;
+            height: 272px;
+            margin: 0 auto;
+            position: relative;
+            top: 40px;
+        }
+        .jdxw #jdxwzi{
+            /* border: 1px solid black; */
+            width: 470px;
+        }
+        .jdxw #jdxwzi h4{
+            color: #666666;
+        }
+        .jdxw #jdxwzi a{
+            color: black;
+        }
+        .jdxw #jdxwjc h5{
+            font-weight: 900;
+        }
+        .jdxw #jdxwzi a:hover{
+            color: skyblue;
+        }
+        .jdxw #jdxwtu{
+            /* border: 1px solid black; */
+            width: 482px;
+            height: 262px;
+            position: relative;
+            top: -270px;
+            left: 500px;
+        }
+        .jdxw #jdxwtuyou{
+            /* border: 1px solid black; */
+            width: 192px;
+            height: 262px;
+            position: relative;
+            top: -263px;
+            left: 280px;
+        }
+        .jdxw #jdxwtu img{
+            padding: 5px;
+        }
+        .jdxw #jdxwtu img:hover{
+            transform: scale(1.1);
+            transition: all .5s;
+        }
+        .xmms{
+            width: 1000px;
+            height: 272px;
+            margin: 0 auto;
+            position: relative;
+            top: 70px;
+        }
+        .xmms ul li{
+            float: left;
+            list-style: none;
+        }
+        .di{
+          position: relative;
+          top: 200px;
+        }
+        .wz{
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dingtu"><img src="img/ding.jpg.PNG" class="tou"></div>
+    
+    <div id="nav-wrap">
+        <div id="nav">
+          <ul>
+            <li class="nav">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="nav">
+              <a href="index2.html">项目</a>
+            </li>
+            <li class="nav">
+              <a href="#">测试赛</a>
+            </li>
+            <li class="nav">
+              <a href="#">东残奥</a>
+            </li>
+            <li class="nav">
+              <a  href="#">志愿者</a>
+            </li>
+            <li class="nav">
+              <a  href="#">教育</a>
+            </li>
+            <li class="nav">
+              <a href="#">学习</a>
+            </li>
+            <li class="nav">
+              <a href="#">我们</a>
+            </li>
+            <li class="nav">
+              <a  href="#">全部</a>
+              <ul class="list" style="width:120px;">
+                <li><a href="#">新闻中心</a></li>
+                <li><a href="#">赛区文化</a></li>
+                <li><a href="#">冬奥百科</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="zong">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+           <div class="carousel-inner" style="width: 1220px;">
+              <div class="carousel-item active">
+                  <a href="#"><img src="img/dca1.jpg"></a>
+              </div>
+              <div class="carousel-item">
+                  <a href="#"><img src="img/dca2.jpg"></a>
+              </div>
+              <div class="carousel-item">
+                  <a href="#"><img src="img/dca3.png"></a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+           
+          </div>
+          <div class="jdxw">
+            <div id="jdxwzi">
+                <h4>焦点新闻</h4>
+                <a href="#" id="jdxwjc"><h5>北京冬奥组委举办北京2022年冬残奥会倒计时</br>
+                    100天主题活动</h5></a>
+                    <a href="#">100天后，中国体育健儿将在冬残奥赛场再展风采</br></a>
+                    <a href="#">细节体现人文关怀——走近冬奥场馆无障碍设施</br></a>
+                    </br>
+                <a href="#" id="jdxwjc"><h5>北京冬残奥会V2.3版单元竞赛日程发布</h5></a>
+                    <a href="#">北京冬奥组委对延庆赛区竞赛场馆和冬奥村（冬残奥村）无障碍永</br>
+                    久设施建设情况开展第二轮联合检查</br></a>
+                    <a href="#">把最佳观赛坐席留给残障人士！探访国家冬季两项中心</br></a>
+            </div>
+            <div id="jdxwtu">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=20211124005136"><img src="img/dcajdxw1.jpg" alt=""></a>
+                <div id="jdxwtuyou">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20211124005136"><img src="img/dcajdxw2.jpg" alt=""></a>
+                    <a href="https://www.beijing2022.cn/a/20210304/011319.htm"><img src="img/dcajdxw3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="char"></div>
+        <div class="xmms">
+            <div>
+                <h1>项目描述</h1>
+                <ul id="xmmstu">
+                    <li><a href=""><img src="img/xmms1.PNG" alt=""></a></li>
+                    <li><a href=""><img src="img/xmms2.PNG" alt=""></a></li>
+                    <li><a href=""><img src="img/xmms3.PNG" alt=""></a></li>
+                    <li><a href=""><img src="img/xmms4.PNG" alt=""></a></li>
+                    <li><a href=""><img src="img/xmms5.PNG" alt=""></a></li>
+                    <li><a href=""><img src="img/xmms6.PNG" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="char"></div>
+        <div class="wz">
+            <a href="#"><img src="img/wz1.PNG" alt=""></a>
+            <a href="#"><img src="img/wz2.PNG" alt=""></a>
+            <a href="#"><img src="img/wz3.PNG" alt=""></a>
+        </div>
+      </div>
+      <div class="di">
+        <img src="img/banquan.jpg" alt="">
+      </div>
+</body>
+</html>

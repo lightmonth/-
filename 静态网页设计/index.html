@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    
+    <script>
+  $(function(){
+    $('.nav').hover(function(){
+      $(this).find('.list').stop().slideDown(500).parent().css({background:'#0755a7'});
+    },function(){
+      $(this).find('.list').stop().slideUp(500).parent().css({background:'#0755a7'});
+    });
+  });
+
+    var jb=new Date("feb 3, 2022 0:0:0").getTime();
+    var b=setInterval(function(){
+        var now=new Date().getTime();
+        var sb=jb-now;
+        var days=Math.floor(sb/(1000*60*60*24));
+        var hours=Math.floor((sb%(1000*60*60*24))/(1000*60*60));
+        var miuntes=Math.floor((sb%(1000*60*60))/(1000*60));
+        var seconds=Math.floor((sb%(1000*60)) /1000);
+        document.getElementById("djsq").innerHTML=days+"天"+hours+"时"+miuntes+"分"+seconds+"秒";
+        if(sb<0){
+            clearInterval(x);
+            document.getElementById("djsq").innerHTML="EXPIRED";
+        }
+    },1000);
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .char{
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            margin: auto;
+            
+        }
+        #nav-wrap {
+            height: 40px;
+            background: #0755a7;
+            font-family: 'Microsoft YaHei';
+        }
+        #nav-wrap #nav ul .nav a{
+            text-decoration: none;
+        }
+         #nav-wrap #nav {
+            height: 40px;
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+         #nav-wrap #nav ul {
+            list-style: none;
+            position: absolute;
+        }
+        #nav-wrap #nav ul li.nav {
+            position: relative;
+            z-index: 999;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+       
+        }
+        #nav-wrap #nav ul li.nav a  {
+            color: white;
+            padding: 0px 20px ;
+        }
+        #nav-wrap #nav ul li.nav a:hover{
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list {
+            display: none;
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list li {
+            border-top: 1px solid #fff;
+            font-size: 14px;
+        }
+        .zong{
+            width: 1200px;
+            margin: auto;
+        }
+        .xi{
+           text-align: center;
+       }
+       .xi a{
+           text-decoration: none;
+       }
+       h1 a:hover{
+           color:deepskyblue;
+       }
+       h1 a{
+           color: #0755a7;
+       }
+       h4{
+           margin-top: 10px;
+       }
+       h4 a{
+           color: black;
+           font-family:sans-serif;
+       }
+       h4 a:hover{
+           color: deepskyblue;
+       }
+       .carousel-inner img {
+            width: 1220px;
+        }
+       .xw{
+           width: 1250px;
+           height: 310px;
+           margin-top: 20px; 
+           
+       }
+       .xw a{
+           text-decoration: none;
+       }
+       .xw #ge{
+           width: 1250px;
+           height: 310px;
+           
+       }
+       .js{
+           width: 1520px;
+           height: 300px;
+           margin-top: 40px;
+       }
+       #saishi{
+            width: 830px;
+            height: 300px;
+            margin-left: 400px;
+            margin-top: -285px;
+       }
+       #saishi a{
+           float: left;
+       }
+       .js #saishi a img:hover{
+        transform: scale(1.1);
+        transition: all.5s;
+       }
+       #biao{
+           width: 310px;
+           height: 100px;
+           border: 1px solid black;
+           position: relative;
+           top: 60px;
+           left: 30px;
+           background-color: white;
+       }
+       #biao #djsq{
+           font-size: 30px;
+           text-align: center;
+           position: relative;
+           top: 20px;
+           font-weight: 900;
+       }
+       #tu1{
+           width: 400px;
+           height: 227px;
+           margin-top: 5px;
+       }
+       #zi1{
+           width: 400px;
+           height: 80px;
+           margin-top: 10px;
+           background-color: darkgrey;
+       }
+       #zi1 a{
+           color: black;
+       }
+       #card{
+           float: left;
+       }     
+       #djs{
+           width: 380px;
+           height: 285px;
+           border-radius: 25px;
+           border: 1px solid black;
+           background-color: #008ed1;
+       }
+       #km{
+            text-align: center;
+            position: relative;
+            top: 10px;
+       }
+       #km h1{
+           font-family: yahei;
+           font-weight: 900;
+       }
+      
+       .xwsd{
+           width: 1250px;
+           height: 650px;
+           /* border: 1px solid black; */
+       }
+       .bt{
+           width: auto;
+           height: 70px;
+           /* border: 1px solid black; */
+       }
+       .bt h1{
+           font-family: yahei;
+           font-weight: 900;
+           font-size: 55px;
+       }
+       #xwfb{
+           float: left;
+           position: relative;
+           top: 20px;
+           width: 600px;
+           height: 550px;
+           /* border: 1px solid black; */
+       }
+       #tup{
+           width: 600px;
+           height: 338px;
+       }
+       #tup1{
+           float: left;
+           margin-top: 10px;
+       }
+       #tup2{
+           float: left;
+           margin-left: 10px;
+           margin-top: 10px;
+       }
+       .jdxw{
+           width: 600px;
+           height: 550px;
+           position: relative;
+            left: 630px;
+            top: 20px;
+            /* border: 1px solid black; */
+       }
+       .jdxw a{
+           text-decoration: none;
+       }
+       .jyi{
+           width: 700px;
+           float: left;
+       }
+       .jjjddd{
+           width: 50px;
+           height: 20px;
+           border-radius: 10px 0px;
+           background-color: red;
+       }
+       #jy{
+           width: 590px;
+           height: 180px;
+           /* border: 1px solid black; */
+       }
+      #jd1{
+          position: relative;
+          top: -540px;
+          left: -170px;
+      }
+      #jd2{
+          position: relative;
+          top: -370px;
+          left: -170px;
+      }
+      #jd3{
+          position: relative;
+          top: -199px;
+          left: -170px;
+      }
+      .xw #zi1 a:hover{
+        color:red;
+      }
+      .yuan{
+          width: 100px;
+          height: 50px;
+          border-radius: 10px 0px;
+          background-color: red;
+      }
+     
+      #jdx{
+          position: relative;
+          top: -700px;
+          left: 260px;
+          width: 370px;
+      }
+      #jdx1{
+          position: relative;
+          top: -530px;
+          left: 260px;
+          width: 370px;
+      }
+      #jdx2{
+          position: relative;
+          top: -350px;
+          left: 260px;
+          width: 370px;
+      }
+      .jcsp{
+          width: 1200px;
+          height: 900px;
+      }
+      .jcsp a img:hover{
+          transform: scale(1.1);
+          transition: all .5s;
+      }
+      #sp1{
+          position: relative;
+          right: 200px;
+          top: 20px;   
+      }
+      /* #sp1 a img:hover{
+        transform: scale(1.1);
+          transition: all.5s;
+      } */
+      #sp2{
+          position: relative;
+          right: 412px;
+          top: 50px;
+      }
+      /* #sp2 a img:hover{
+        transform: scale(1.1);
+          transition: all.5s;
+      } */
+      #sp3{
+          position: relative;
+          right: -14px;
+          top: -175px;
+      }
+      /* #sp3 a img:hover{
+        transform: scale(1.1);
+          transition: all.5s;
+      } */
+      #sp4{
+          position: relative;
+          top: -880px;
+          left: 430px;
+      }
+      /* #sp4 a img:hover{
+          transform: scale(1.1);
+          transition: all .5s;
+      } */
+      .cjxl{
+          width: 1200px;
+          height: 600px;
+          position: relative;
+          top: -300px;
+          left: -15px;
+      }
+      .cbt{
+          width: 10px;
+          position: relative;
+          left: -90px;
+          top: 270px;
+      }
+      .cbt h1{
+        font-family: yahei;
+        font-weight: 900;
+        font-size: 55px;
+      }
+    </style>
+</head>
+<body>
+    
+        <img src="img/ding.jpg.PNG">
+        <div id="nav-wrap">
+            <div id="nav">
+              <ul>
+                <li class="nav">
+                  <a href="#">首页</a>
+                </li>
+                <li class="nav">
+                  <a href="index2.html">项目</a>
+                </li>
+                <li class="nav">
+                  <a href="#">测试赛</a>
+                </li>
+                <li class="nav">
+                  <a href="index3.html">东残奥</a>
+                </li>
+                <li class="nav">
+                  <a  href="#">志愿者</a>
+                </li>
+                <li class="nav">
+                  <a  href="#">教育</a>
+                </li>
+                <li class="nav">
+                  <a href="#">学习</a>
+                </li>
+                <li class="nav">
+                  <a href="#">我们</a>
+                </li>
+                <li class="nav">
+                  <a  href="#">全部</a>
+                  <ul class="list" style="width:120px;">
+                    <li><a href="#">新闻中心</a></li>
+                    <li><a href="#">赛区文化</a></li>
+                    <li><a href="#">冬奥百科</a></li>
+                    <li><a href="#">关于我们</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    <div class="zong">
+    <div class="xi">
+        <h1><a href="#">办好冬奥会，习近平反复强调这个8个字</a></h1>
+        <h4><a href="#">韩正在北京调研时强调 围绕“简约、安全、精彩”办赛要求 精益求精落实落细各项筹办工作</a></h4>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+       <div class="carousel-inner" style="width: 1220px;">
+          <div class="carousel-item active">
+              <a href="#"><img src="img/xun1.png"></a>
+          </div>
+          <div class="carousel-item">
+              <a href="#"><img src="img/xun2.jpg"></a>
+          </div>
+          <div class="carousel-item">
+              <a href="#"><img src="img/xun3.jpg"></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+       
+      </div>
+    
+    <div class="xw">
+        <div id="ge">
+            <div id="card" style="width: 400px; height: 307px; ">
+                <div id="tu1">
+                  <a href="#"><img src="img/xw1.jpg"></a>  
+                </div>
+                <div id="zi1">
+                    <a href="#" class="yuan" style="color: white;">焦点新闻 2021.12.12</a>
+                    <p><a href="#"> 新华社奥林匹克峰会：北京冬奥会将开启全球冬季运动新的时代</a></p>
+                </div>
+            </div>
+            <div id="card" style="width: 400px; height: 307px; margin-left: 10px;">
+                <div id="tu1">
+                    <a href="#"><img src="img/xw2.jpg"></a>
+                </div>
+                <div id="zi1">
+                    <a href="#" class="yuan" style="color: white;">焦点新闻 2021.12.11</a>
+                    <p> <a href="#">北京日报北京冬奥组委暨城市运行保障指挥部第十九次调度会议召开</a></p>
+                </div>
+            </div>
+            <div id="card" style="width: 400px; height: 307px; margin-left: 10px;">
+                <div id="tu1">
+                    <a href="#"><img src="img/xw3.jpg"></a>
+                </div>
+                <div id="zi1">
+                    <a href="#" class="yuan" style="color: white;">焦点新闻 2021.11.30 </a>
+                    <p><a href="#">北京日报北京2022年冬奥会和冬残奥会安保总指挥部第一次会议召开 加强场馆安保团队建设 排查整治涉冬</a></p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="js">
+        <div id="djs">
+            <div id="km">
+                <h1>冬奥倒计时</h1>
+            </div>
+            <div id="biao">
+                <p id="djsq"></p>
+            </div>
+        </div>
+            <div id="saishi">
+                <a href="#">
+                    <img src="img/1.png" style="width: 263px;">
+                </a>
+                <a href="#">
+                    <img src="img/2.png" style="margin-left: 16px; width: 263px;">
+                </a>
+                <a href="#">
+                    <img src="img/3.png" style="margin-left: 16px; width: 263px;">
+                </a>
+                <a href="#">
+                    <img src="img/4.png" style="margin-top: 10px; width: 263px;">
+                </a>
+                <a href="#">
+                    <img src="img/5.png" style="margin-left: 16px; margin-top: 10px; width: 263px;">
+                </a>
+                <a href="#">
+                    <img src="img/6.png" style="margin-left: 16px; margin-top: 10px; width: 263px;">
+                </a>
+            </div>
+        </div>
+        <div class="char"></div>
+        <div class="xwsd">
+            <div class="bt">
+                <h1>新闻速递</h1>
+            </div>
+            <div id="xwfb">
+                <div id="tup">
+                    <div>
+                        <a href="#"><img src="img/fb.png"></a>
+                    </div>
+                </div>
+                <div id="tup1">
+                    <div><a><img src="img/fb1.png"></a></div>
+                </div>
+                <div id="tup2">
+                    <div><a><img src="img/fb2.png"></a></div>
+                </div>
+            </div>
+            <div class="jdxw">
+                <div id="jy">
+                    <div id="jd1"><a><img src="img/jd1.png"></a></div>
+                    <div id="jdx">
+                        <a href="#" class="yuan" style="color: white;">焦点新闻</a>
+                        <p> <a href="#"><h4>国际奥委会官员：我们给北京冬奥打高分！</h4></a></p>
+                        <p>国际奥委会奥运会部执行主任克里斯托弗·杜比在接受总台记者独家采访时表示，他对中国为举办……</p>
+                    </div>
+                </div>
+                <div id="jy">
+                    <div id="jd2"><a><img src="img/jd2.png"></a></div>
+                    <div id="jdx1">
+                        <a href="#" class="yuan" style="color: white;">焦点新闻</a>
+                        <p><a href="#"><h4>北京冬奥会主媒体中心应急电源全部就位</h4></a></p>
+                        <p>近日，北京冬奥会主媒体中心开展转播保障演练，场馆应急电源全部就位，可确保赛时供电……</p>
+                    </div>
+                </div>
+                <div id="jy">
+                    <div id="jd3"><a><img src="img/jd3.png"></a></div>
+                    <div id="jdx2">
+                        <a href="#" class="yuan" style="color: white;">焦点新闻</a>
+                        <p><a href="#"><h4>张家口崇礼奥林匹克公园和张家口奥林匹克颁奖广场正式命名</h4></a></p>
+                        <p>12月15日，张家口赛区古杨树场馆群和张家口颁奖广场两区域正式被国际奥委会批准命名为......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jcsp">
+            <div class="bt">
+                <h1>精彩视频</h1>
+            </div>
+            <div id="sp1">
+                <a href="#"><img src="img/sp1.jpg"></a>
+            </div>
+            <div id="sp2">
+                <a href="#"><img src="img/sp2.jpg"></a>
+            </div>
+            <div id="sp3">
+                <a href="#"><img src="img/sp3.jpg"></a>
+            </div>
+            <div id="sp4">
+                <a href="#"><img src="img/sp4.png"></a>
+            </div>
+        </div>
+        <div class="cjxl">
+            <div class="cbt">
+                <h1>场馆巡礼</h1>
+            </div>
+            <img src="img/cjxl.JPG">
+        </div>
+        </div>
+    <div>
+            <img src="img/banquan.jpg">
+        </div>
+        
+    
+        
+   
+    
+
+</body>
+</html>

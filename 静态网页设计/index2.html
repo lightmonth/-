@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+        $('.nav').hover(function(){
+          $(this).find('.list').stop().slideDown(500).parent().css({background:'#0755a7'});
+        },function(){
+          $(this).find('.list').stop().slideUp(500).parent().css({background:'#0755a7'});
+        });
+      });
+    </script>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        #nav-wrap {
+            height: 40px;
+            background: #0755a7;
+            font-family: 'Microsoft YaHei';
+        }
+         #nav-wrap #nav {
+            height: 40px;
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+         #nav-wrap #nav ul {
+            list-style: none;
+            position: absolute;
+        }
+        #nav-wrap #nav ul li.nav {
+            position: relative;
+            z-index: 999;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+       
+        }
+        #nav-wrap #nav ul li.nav a  {
+            color: white;
+            padding: 9px 20px ;
+        }
+        #nav-wrap #nav ul li.nav a:hover{
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list {
+            display: none;
+            background-color: #008ed1;
+        }
+        #nav-wrap #nav ul li.nav ul.list li {
+            border-top: 1px solid #fff;
+            font-size: 14px;
+        }
+        .zong{
+          width: 1250px;
+          
+          margin: auto;
+        }
+        .bt{
+          position: relative;
+          
+          top: 20px;
+          color: #0755a7;
+        }
+        .hb{
+          width: 575px;
+        }
+        .jieshao{
+          width: 1250px;
+          height: 660px;
+        }
+        #jshao{
+          width: 570px;
+          position: relative;
+          
+          top: 40px;
+        }
+        #jshao img{
+          width: 570px;
+          height: 320px;
+        }
+        #jshao1{
+          width: 170px;
+          position: relative;
+        
+          top: 50px;
+        }
+        #jshao2{
+          width: 170px;
+          position: relative;
+          left: 290px;
+          top: -116px;;
+        }
+        .zs{
+          width: 650px;
+          height: 480px;
+          position: relative;
+          left: 590px;
+          top: -600px;
+        }
+        .zs .tu{
+          height: 155px;
+          padding-top: 4px;
+          
+        }
+        #zszi{
+          width: 280px;
+          position: relative;
+          left: 260px;
+          top: -150px;
+        }
+        .zs .tu #zszi p{
+          color: darkgrey;
+          font-size: 12px;
+        }
+        .zs .tu #zszi a:hover{
+          color: #0755a7;
+        }
+        .xmms{
+          width: 1250px;
+          height: 490px;
+        }
+        .xmms .xm h1{
+          color: #0755a7;
+        }
+        .xmms img{
+          position: relative;
+          top: 20px;
+        }
+        .bscd{
+          width: 1250px;
+          height: 490px;
+          position: relative;
+          top: 50px;
+        }
+        .bscd .bs h1{
+          color: #0755a7;
+        }
+        .jscg{
+          width: 1250px;
+          height: 490px;
+          position: relative;
+          top: 120px;
+        }
+        .jscg h1{
+          color: #0755a7;
+        }
+        .di{
+          position: relative;
+          top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/ding.jpg.PNG" class="tou">
+    <div id="nav-wrap">
+        <div id="nav">
+          <ul>
+            <li class="nav">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="nav">
+              <a href="index2.html">项目</a>
+            </li>
+            <li class="nav">
+              <a href="#">测试赛</a>
+            </li>
+            <li class="nav">
+              <a href="index3.html">东残奥</a>
+            </li>
+            <li class="nav">
+              <a  href="#">志愿者</a>
+            </li>
+            <li class="nav">
+              <a  href="#">教育</a>
+            </li>
+            <li class="nav">
+              <a href="#">学习</a>
+            </li>
+            <li class="nav">
+              <a href="#">我们</a>
+            </li>
+            <li class="nav">
+              <a  href="#">全部</a>
+              <ul class="list" style="width:120px;">
+                <li><a href="#">新闻中心</a></li>
+                <li><a href="#">赛区文化</a></li>
+                <li><a href="#">冬奥百科</a></li>
+                <li><a href="#">关于我们</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="zong">
+        <div class="jieshao">
+          <div class="bt">
+            <h1>速度滑冰</h1>
+          </div>
+           <div class="hb">
+              <div id="jshao">
+                <a href="https://www.beijing2022.cn/cn/olympics/speed_skating.htm"><img src="img/jieshao.PNG"></a>
+              </div>
+              <div id="jshao1">
+                <a href="#"><img src="img/jshao1.PNG"></a>
+              </div>
+              <div id="jshao2">
+                <a href="#"><img src="img/jshao2.PNG"></a>
+              </div>
+           </div>
+           <div class="zs">
+             <div class="tu">
+               <img src="img/zs1.PNG" style="width: 252px; height: 154px;">
+               <div id="zszi">
+                  <p>2019.5.9 北京冬奥组委官网</p>
+                  <a href="#"><h3>【冬奥竞赛项目知识介绍片】速度滑冰</h3></a>
+                  <p>速度滑冰简称速滑，滑冰运动中历史最为悠久，开展最为广泛的项目。1763年2月4日在英国......</p>
+               </div>
+             </div>
+             <div class="tu">
+                <img src="img/zs2.PNG" alt=""  style="width: 252px; height: 154px;">
+                <div id="zszi">
+                  <p>2020.1.6 新华社</p>
+                  <a href="#"><h3>冬奥冠军张虹将领滑全国大众速度滑冰马拉松系列赛</h3></a>
+                  <p>该赛事同时也是黑龙江首届魅力道里“张虹杯”大众速度滑冰马拉松公开赛。比赛分为成年组......</p>
+               </div>
+             </div>
+             <div class="tu">
+               <img src="img/zs3.PNG" alt=""  style="width: 252px; height: 154px;">
+               <div id="zszi">
+                <p>2020.4.30 新华社</p>
+                <a href="#"><h3>短道速滑和速度滑冰体能训练营开营</h3></a>
+                <p>短道速滑和速度滑冰体能训练营4月29日正式在河北坝上冰雪训练基地开营，通过各项考核的运动员将入选新赛季的短道速滑和速度滑冰国家队......</p>
+             </div>
+             </div>
+           </div>
+        </div>
+        <div class="xmms">
+          <div class="xm"><h1>项目描述</h1></div>
+          <img src="img/xmms.PNG" alt="">
+        </div>
+        <div class="bscd">
+          <div class="bs"><h1>比赛场地</h1></div>
+          <img src="img/bccd.PNG" alt="">
+        </div>
+        <div class="jscg">
+          <div class="cg"><h1>速度滑冰竞赛场馆</h1></div>
+          <img src="img/cg.PNG" alt="">
+        </div>
+      </div>
+      <div class="di">
+        <img src="img/banquan.jpg" alt="">
+      </div>
+      
+</body>
+</html>
